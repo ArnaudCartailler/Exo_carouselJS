@@ -25,7 +25,7 @@
       <div class="carousel-slides">
         <div class="slides">
 
-          <img src="img/compass.jpg" onmouseover="stop()" onmouseout="restart()"alt="compass" height="570">
+          <img src="img/compass.jpg" onmouseover="stop()" onmouseout="restart()" alt="compass" height="570">
           <p></p>
         </div>
 
@@ -54,10 +54,10 @@
   </div>
     <div class="select d-flex justify-content-between">
       <div class="point-select">
-      <a id="button" class="prev" onclick="nextSlides(-1, 0)"><i class="fas fa-arrow-left fa-2x"></i></a>
+      <a id="button" class="prev" onmouseover="stop()" onclick="nextSlides(-1, 0)"><i class="fas fa-arrow-left fa-2x"></i></a>
     </div>
     <div class="point-select">
-      <a id="button" class="next" onclick="nextSlides(1, 0)"><i class="fas fa-arrow-right fa-2x"></i></a>
+      <a id="button" class="next" onmouseover="stop()" onclick="nextSlides(1, 0)"><i class="fas fa-arrow-right fa-2x"></i></a>
     </div>
     </div>
     <p class="d-flex ml-5 text-align-center"> To stop the carousel, put the mouse on an image. To let it automatic, put the mouse out of the images. You can click on arrows for step back one frame at a time.</p>
