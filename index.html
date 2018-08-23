@@ -24,12 +24,13 @@
 
       <div class="carousel-slides">
         <div class="slides">
-          <img src="img/compass.jpg" alt="compass" height="570">
+          
+          <img src="img/compass.jpg" onmouseover="stop()" onmouseout="restart()"alt="compass" height="570">
           <p></p>
         </div>
 
         <div class="slides">
-          <img src="img/design.jpg"alt="design" height="550">
+          <img onmouseover="stop()" onmouseout="restart()" src="img/design.jpg"alt="design" height="550">
         </div>
 
         <!-- <div class="slides">
@@ -37,26 +38,26 @@
         </div> -->
 
         <div class="slides">
-          <img src="img/apple.jpg"alt="apple" height="550">
+          <img onmouseover="stop()" onmouseout="restart()" src="img/apple.jpg"alt="apple" height="550">
           <p></p>
         </div>
 
         <div class="slides">
-          <img src="img/phone.jpg" alt="phone" height="550">
+          <img onmouseover="stop()" onmouseout="restart()" src="img/phone.jpg" alt="phone" height="550">
           <p></p>
         </div>
 
         <div class="slides">
-          <img src="img/wake.jpg"  alt="wakeboard" height="550">
+          <img onmouseover="stop()" onmouseout="restart()" src="img/wake.jpg"  alt="wakeboard" height="550">
           <p></p>
         </div>
   </div>
     <div class="select d-flex justify-content-between">
       <div class="point-select">
-      <a class="prev" onclick="plusSlides(-1, 0)"><i class="fas fa-arrow-left fa-2x"></i></a>
+      <a id="button" class="prev" onclick="nextSlides(-1, 0)"><i class="fas fa-arrow-left fa-2x"></i></a>
     </div>
     <div class="point-select">
-      <a class="next" onclick="plusSlides(1, 0)"><i class="fas fa-arrow-right fa-2x"></i></a>
+      <a id="button" class="next" onclick="nextSlides(1, 0)"><i class="fas fa-arrow-right fa-2x"></i></a>
     </div>
     </div>
 </div>

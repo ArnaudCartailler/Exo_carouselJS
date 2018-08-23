@@ -1,6 +1,7 @@
 
 var slideIndex = [1,1];
 var slideId = ["slides"];
+var time ="";
 
 function showSlides(n, no) {
 
@@ -22,9 +23,11 @@ function showSlides(n, no) {
 }
 
 var myIndex = 0;
+
+
 carousel();
 
-function plusSlides(n, no) {
+function nextSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
@@ -39,5 +42,13 @@ function carousel() {
       myIndex = 1
     }
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2500);
+    time = setTimeout(carousel, 2500);
+}
+
+function stop(){
+  clearInterval(time);
+}
+
+function restart(){
+  time = setTimeout(carousel, 2500);
 }
